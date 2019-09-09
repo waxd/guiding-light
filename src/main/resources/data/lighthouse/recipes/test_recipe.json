@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:nether_star"
+    }
+  ],
+  "result":
+  {
+    "item": "lighthouse:lighthouse_controller_item",
+    "count": 1
+  }
+}
