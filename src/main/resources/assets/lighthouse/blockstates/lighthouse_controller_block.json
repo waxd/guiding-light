@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "lighthouse:block/lighthouse_controller_block"
+    }
+  }
+}
