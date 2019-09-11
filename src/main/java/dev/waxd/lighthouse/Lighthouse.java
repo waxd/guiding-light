@@ -4,6 +4,7 @@ import dev.waxd.lighthouse.client.LighthouseController;
 import net.minecraft.block.Block;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemGroup;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -36,7 +37,8 @@ public class Lighthouse {
 
         @SubscribeEvent
         public static void onItemsRegistry(final RegistryEvent.Register<Item> event) {
-            Item lighthouseController = new BlockItem(lighthouseControllerBlock, new Item.Properties()).setRegistryName("lighthouse", "lighthouse_controller_item");
+            Item lighthouseController = new BlockItem(lighthouseControllerBlock, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName("lighthouse", "lighthouse_controller_item");
+
             event.getRegistry().register(lighthouseController);
         }
     }
